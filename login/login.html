@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登陆</title>
+		<style type="text/css">
+			body{
+				font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+			}
+			.wrapper{
+				position: fixed;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    bottom: 0;
+			    background-position: center;
+			    background-size: cover;
+			    background-repeat: no-repeat;
+			    background-image: url(img/bg@2x.png);
+			}
+			.login-wrapper{
+				width: 520px;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			}
+			.login-block{
+				transform: scale(0.8); 
+			    background: #037334;
+			    border-radius: 15px;
+			    overflow: hidden;
+			}
+			.login-title{
+			    color: #23392d;
+			    font-size: 58px;
+			    letter-spacing: 4px;
+			    height: 130px;
+			    background: #fff;
+			    line-height: 130px;
+			    text-align: center;
+			}
+			.form-wrapper{
+				font-size: 22px;
+			    color: #fff;
+			    padding: 50px 35px;
+			}
+			.form-item{
+				margin-bottom: 45px;
+			}
+			.form-item__label{
+				margin-bottom: 9px;
+			}
+			.input__inner{
+				-webkit-appearance: none;
+			    -moz-appearance: none;
+			    appearance: none;
+			    background-color: #0a2b3f;
+			    background-image: none;
+			    border-radius: 8px;
+			    border: 0;
+			    box-sizing: border-box;
+			    color: #fff;
+			    display: inline-block;
+			    font-size: inherit;
+			    height: 62px;
+			    line-height: 1;
+			    outline: none;
+			    padding: 3px 20px;
+			    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+			    width: 100%;
+			}
+			:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			    color: #fff; opacity:0.5; 
+			}
+			
+			::-moz-placeholder { /* Mozilla Firefox 19+ */
+			    color: #fff;opacity:0.5;
+			}
+			
+			input:-ms-input-placeholder{
+			    color: #fff;opacity:0.5;
+			}
+			
+			input::-webkit-input-placeholder{
+			    color: #fff;opacity:0.5;
+			}
+			.input__inner--username{
+				background-color: #025024;
+			}
+			.input__inner--password{
+				background-color: #025024;
+			}
+			.login-btn{
+				width: 168px;
+				height: 60px;
+				margin-top: 48px;
+				margin: 0 auto;
+				background-position: center;
+			    background-size: contain;
+			    background-repeat: no-repeat;
+			    background-image: url(img/btn_login_n@2x.png);
+			    cursor: pointer;
+			}
+			.login-btn:hover{
+				background-image: url(img/btn_login_s@2x.png);
+			}
+			.form-item__content{
+				position: relative;
+			}
+			.form-item__error{
+				position: absolute;
+			    bottom: -27px;
+			    padding-left: 20px;
+			    color: #ff4b52;
+			    font-size: 19px;
+    			/*text-shadow: 1px 1px #000;*/
+			}
+			.button{
+				display: inline-block;
+			    line-height: 20px;
+			    white-space: nowrap;
+			    cursor: pointer;
+			    background: #fff;
+			    border: 0;
+			    border-color: #c4c4c4;
+			    -webkit-appearance: none;
+			    text-align: center;
+			    box-sizing: border-box;
+			    outline: none;
+			    margin: 0;
+			    -moz-user-select: none;
+			    -webkit-user-select: none;
+			    -ms-user-select: none;
+			    padding: 11px 15px;
+			    font-weight: bold;
+			    width: 100%;
+			    height: 62px;
+			    border-radius: 8px;
+			    background: #fff;
+			    color: #23392d;
+			    font-size: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="login-wrapper">
+				<div class="login-block">
+					<div class="login-title">WePublish</div>
+					<div class="form-wrapper">
+						<form class="login-form">
+							<div class="form-item">
+								<div class="form-item__content">
+									<div class="input">
+										<input type="text" class="input__inner input__inner--username" placeholder="Enter the username"/>
+									</div>
+									<div class="form-item__error">username error</div>
+								</div>
+								
+							</div>
+							<div class="form-item">
+								<div class="form-item__content">
+									<div class="input">
+										<input type="password" class="input__inner input__inner--password" placeholder="Enter the password"/>
+									</div>
+									<div class="form-item__error">password error</div>
+								</div>
+								
+							</div>
+							<button class="button">Login</button>
+						</form>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

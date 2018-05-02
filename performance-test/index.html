@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	</head>
+	<body>
+		<div class="main">内容1</div>
+		<div class="main">内容2</div>
+		<div id="aa">11</div>
+		<input type="text" name="age" value="" />
+		<!--<div id="aa">1111</div>-->
+		<script
+		  src="https://code.jquery.com/jquery-3.2.1.js"
+		  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		  crossorigin="anonymous">
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function(event) {
+				var class1 = document.getElementsByClassName('main')
+				var class2 = $('.main')
+				var id1 = document.getElementById('aa')
+				var id2 = $('#aa')
+				var tag1 = document.getElementsByTagName('div')
+				var tag2 = $('div')
+				var sel1 = document.querySelector('.main')
+				var sel2 = document.querySelectorAll('.main')
+				
+				var name1 = document.getElementsByName('age')
+				var name1_1 = document.querySelector('[name=age]')
+				var name2 = $('[name=age]')
+				console.log(name1)
+				console.log(name1_1)
+				console.log(name2)
+			});
+		</script>
+	</body>
+</html>
+

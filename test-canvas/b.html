@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#circles {
+			  border: 1px solid #eee;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="circles" width="640" height="280"></canvas>
+		<script type="text/javascript">
+			  let canvas = document.getElementById('circles')
+			  let ctx = canvas.getContext('2d')
+			  let size = {w: canvas.clientWidth, h: canvas.clientHeight}
+			  let radius = {minR: 15, maxR: 40}
+			  ctx.beginPath();
+			  ctx.arc(100, 100, 29, 0, Math.PI*2);
+			  ctx.fillStyle = "#6c8fde";
+			  ctx.fill();
+			  ctx.font = "10px sans-serif";
+			  ctx.fillStyle = "#fff";
+			  ctx.textAlign = "center";
+			  ctx.textBaseline = "middle";
+			  ctx.fillText('电子网络', 100, 100 - 8);
+			  ctx.fillText('10.95%', 100, 100 + 8);
+			  
+			  
+			  ctx.beginPath();
+			  ctx.arc(240, 100, 50, 0, Math.PI*2);
+			  ctx.fillStyle = "#4a90e2";
+			  ctx.fill();
+			  ctx.font = "16px sans-serif";
+			  ctx.fillStyle = "#fff";
+			  ctx.textAlign = "center";
+			  ctx.textBaseline = "middle";
+			  ctx.fillText('销售客服', 240, 100 - 14);
+			  ctx.fillText('2.95%', 240, 100 + 14);
+		</script>
+	</body>
+</html>
